@@ -1,9 +1,140 @@
 <!doctype html>
-<html>
-  <head><meta charset="utf-8"><title>Lei Yijia</title></head>
-  <body>
-    <h1>Lei Yijia</h1>
-    <p>Email: leiyj23 [at] mails.tsinghua.edu.cn</p>
-    <p>Affiliation: Tsinghua University</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Yijia Lei (雷一嘉), a Tsinghua University undergraduate researching human-centered robot learning, egocentric vision, and robotic manipulation.">
+  <title>Yijia Lei | 雷一嘉</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="introduction" aria-labelledby="name">
+      <h1 id="name">Yijia Lei <span class="name-divider" aria-hidden="true">|</span> <span class="chinese-name" lang="zh-Hans">雷一嘉</span></h1>
+      <img class="portrait" src="assets/photo.jpg" width="905" height="1135" alt="Yijia Lei at the Great Wall of China" fetchpriority="high">
+      <div class="biography">
+        <p>I am a fourth-year undergraduate student at <a href="https://www.tsinghua.edu.cn/en/">Tsinghua University</a>, double majoring in Fundamental Science (Mathematics &amp; Physics) and Mechanical Engineering.</p>
+        <!-- TODO(owner): Confirm the precise Stanford lab wording (STAI / SVL).
+             The draft leaves the lab name open; the confirmed institution and advisers are retained. -->
+        <p>Currently, I collaborate with Prof. <a href="https://profiles.stanford.edu/ehsan-adeli">Ehsan Adeli</a> and Yao He at <a href="https://www.stanford.edu/">Stanford University</a>, under Prof. Adeli's supervision.</p>
+        <p>I am also a research intern at <a href="https://collegeai.tsinghua.edu.cn/kxyj/ktzjs/MEOW_LAB_Modeling_Egocentric_Omniscient_Worlds_.htm">MeowLab</a>, College of AI, Tsinghua University, advised by Prof. Miao Liu, and at <a href="https://starwith.ai/">Starwith AI</a>, advised by Yao Feng. I also conduct research at ARL, Department of Mechanical Engineering, Tsinghua University, where I was supervised by Prof. <a href="https://www.me.tsinghua.edu.cn/en/info/1272/2102.htm">Yao Jiang</a>.</p>
+        <!-- TODO(owner): Cross-check this supplied research-interest wording against the latest CV,
+             which was not included. Source: web_recommended.txt; no new direction is introduced. -->
+        <p>My research interests lie in <strong>human-centered robot learning</strong>. I am particularly interested in how robots can acquire versatile capabilities by learning from humans and the physical world, and how they can understand, reason, act, and collaborate with people in dynamic environments.</p>
+        <nav class="contact-links" aria-label="Contact and profiles">
+          <a href="mailto:leiyj23@mails.tsinghua.edu.cn">Email</a>
+          <span aria-hidden="true">/</span>
+          <a href="https://github.com/leiyj23">GitHub</a>
+        </nav>
+        <!-- TODO(owner): Add CV, Google Scholar, and WeChat only after real destinations are supplied. -->
+      </div>
+    </header>
+
+    <section class="section" aria-labelledby="news-heading">
+      <h2 id="news-heading">News</h2>
+      <!-- ALIVE date: web_recommended.txt. IPIBench (September) and EgoSAT (June)
+           acceptance months were supplied by the owner. Event order is unchanged. -->
+      <ul class="news-list">
+        <li><time datetime="2026-11">Nov. 2026</time><span><a href="#alive">ALIVE</a> is now available on arXiv! Read our <a href="https://arxiv.org/abs/2611.21366">paper</a> and visit the <a href="https://lijinzhao30.github.io/ALIVE/">project page</a>.</span></li>
+        <li><time datetime="2026-09">Sep. 2026</time><span><a href="#ipibench">IPIBench</a> has been accepted to <strong>NeurIPS 2026</strong> (Evaluations &amp; Datasets Track)! <a href="https://arxiv.org/abs/2605.27074">Paper</a> / <a href="https://lijinzhao30.github.io/IPIBench/">Project Page</a></span></li>
+        <li><time datetime="2026-06">Jun. 2026</time><span><a href="#egosat">EgoSAT</a> has been accepted to <strong>ECCV 2026</strong>! <a href="https://arxiv.org/abs/2606.24422">Paper</a> / <a href="https://leiyj23.github.io/EgoSAT/">Project Page</a></span></li>
+      </ul>
+    </section>
+
+    <section class="section publications" aria-labelledby="publications-heading">
+      <h2 id="publications-heading">Publications and Manuscripts</h2>
+      <!-- Keep the five entries in website.txt order. Titles and author order for the
+           first three were checked against their public arXiv records on 2026-11-22. -->
+      <article class="publication with-figure" id="egosat" aria-labelledby="egosat-title">
+        <a class="publication-figure" href="assets/egosat-teaser.png" aria-label="View full-size EgoSAT overview">
+          <img src="assets/egosat-teaser.png" width="4000" height="2250" loading="lazy" alt="EgoSAT overview: retrospective, present, and prospective reasoning in egocentric video">
+        </a>
+        <div class="publication-details">
+        <h3 id="egosat-title"><a href="https://arxiv.org/abs/2606.24422">EgoSAT: A Comprehensive Benchmark of Egocentric Streaming Interaction Understanding</a></h3>
+        <p class="authors"><strong>Yijia Lei</strong>, Jinzhao Li, Yichi Zhang, Jiacheng Hua, Yin Li, Miao Liu</p>
+        <p class="venue"><em>ECCV 2026</em> · Accepted</p>
+        <p class="publication-links"><a href="https://arxiv.org/abs/2606.24422">Paper</a> <span aria-hidden="true">/</span> <a href="https://leiyj23.github.io/EgoSAT/">Project Page</a> <span aria-hidden="true">/</span> <a href="https://github.com/leiyj23/EgoSAT">Code</a></p>
+        <p class="summary">A comprehensive benchmark for egocentric streaming interaction understanding, unifying retrospective, present, and prospective reasoning under causal observation constraints. It also examines future interaction predictability, model confidence, and answerability.</p>
+        </div>
+      </article>
+
+      <article class="publication with-figure" id="ipibench" aria-labelledby="ipibench-title">
+        <a class="publication-figure" href="assets/ipibench-overview.png" aria-label="View full-size IPIBench overview">
+          <img src="assets/ipibench-overview.png" width="4000" height="2302" loading="lazy" alt="IPIBench overview: proactive monitoring, task management, and interleaved reactive-proactive requests">
+        </a>
+        <div class="publication-details">
+        <h3 id="ipibench-title"><a href="https://arxiv.org/abs/2605.27074">IPIBench: Evaluating Interactive Proactive Intelligence of MLLMs under Continuous Streams</a></h3>
+        <p class="authors">Jinzhao Li, Yinuo Chen, Wenxuan Song, <strong>Yijia Lei</strong>, Yichi Zhang, Honglei Yan, Panwang Pan, Miao Liu</p>
+        <p class="venue"><em>NeurIPS 2026, Evaluations &amp; Datasets Track</em> · Accepted</p>
+        <p class="publication-links"><a href="https://arxiv.org/abs/2605.27074">Paper</a> <span aria-hidden="true">/</span> <a href="https://lijinzhao30.github.io/IPIBench/">Project Page</a></p>
+        <p class="summary">A benchmark for proactive intelligence in continuous video streams, evaluating when multimodal models should respond, how they manage evolving user requests, and how they coordinate reactive and proactive interactions.</p>
+        </div>
+      </article>
+
+      <article class="publication with-figure" id="alive" aria-labelledby="alive-title">
+        <a class="publication-figure" href="assets/alive-teaser.webp" aria-label="View full-size ALIVE overview">
+          <img src="assets/alive-teaser.webp" width="2800" height="864" loading="lazy" alt="ALIVE overview: proactive monitoring, streaming task coordination, and feedback-seeking interaction">
+        </a>
+        <div class="publication-details">
+        <h3 id="alive-title"><a href="https://arxiv.org/abs/2611.21366">ALIVE: Making Streaming Video Models Interactive</a></h3>
+        <p class="authors">Jinzhao Li, Yuan Xu, Jinxuan Wu, Yukun Wang, <strong>Yijia Lei</strong>, Hanyu Ji, Yinuo Chen, Zining Huang, Chi Zhang, Hang Ye, Yiwu Zhong, Honglei Yan, Panwang Pan, Yizhou Wang, Yin Li, Miao Liu</p>
+        <p class="venue"><em>CVPR 2027 Under Review</em></p>
+        <p class="publication-links"><a href="https://arxiv.org/abs/2611.21366">Paper</a> <span aria-hidden="true">/</span> <a href="https://lijinzhao30.github.io/ALIVE/">Project Page</a></p>
+        <p class="summary">An interactive streaming video model that supports proactive monitoring, coordinates evolving user requests, and actively seeks feedback when additional information is needed to complete a task.</p>
+        </div>
+      </article>
+
+      <!-- The two manuscript records below come from web_recommended.txt.
+           TODO(owner): Confirm current author lists and review status before publication.
+           No public manuscript URLs were supplied. Descriptions stay at the topic level. -->
+      <article class="publication" id="peg-in-hole" aria-labelledby="peg-in-hole-title">
+        <h3 id="peg-in-hole-title">Tactile-Based Jamming-Preventive Precision Peg-in-Hole Assembly</h3>
+        <p class="authors"><strong>Yijia Lei</strong>, Qiyin Huang, Yao Jiang, Tiemin Li</p>
+        <p class="venue"><em>IEEE Robotics and Automation Letters (RA-L) Under Review</em></p>
+        <p class="summary">Research on tactile feedback for precision peg-in-hole assembly and jamming prevention.</p>
+      </article>
+
+      <article class="publication" id="contact-agnostic" aria-labelledby="contact-agnostic-title">
+        <h3 id="contact-agnostic-title">Contact-Agnostic Action Strategy for Two-Fingered Reorientation with External Forces</h3>
+        <p class="authors">Qiyin Huang, <strong>Yijia Lei</strong>, Yue Wang, Lunwei Zhang, Yen Hang Zhou, Tiemin Li, Yao Jiang</p>
+        <p class="venue"><em>IEEE Transactions on Automation Science and Engineering Under Review</em></p>
+        <p class="summary">Research on two-fingered in-hand reorientation using external forces without a predefined model of environmental contacts.</p>
+      </article>
+    </section>
+
+    <section class="section research-experience" aria-labelledby="experience-heading">
+      <h2 id="experience-heading">Research Experience</h2>
+      <!-- Positions, organization spelling, and order follow website.txt.
+           Dates are omitted because the draft does not specify them. -->
+      <article class="experience" aria-labelledby="meow-heading">
+        <div class="logo-frame"><img src="assets/meow_lab.png" width="491" height="290" loading="lazy" alt="MeowLab logo"></div>
+        <div class="experience-description">
+          <h3 id="meow-heading"><a href="https://collegeai.tsinghua.edu.cn/kxyj/ktzjs/MEOW_LAB_Modeling_Egocentric_Omniscient_Worlds_.htm">MeowLab, College of AI</a></h3>
+          <p>Tsinghua University</p>
+          <p class="role">Research Intern</p>
+          <p>Advised by Prof. Miao Liu. Research on egocentric vision and streaming multimodal understanding.</p>
+        </div>
+      </article>
+      <article class="experience" aria-labelledby="starwith-heading">
+        <div class="logo-frame"><img src="assets/starwith.png" width="877" height="259" loading="lazy" alt="Starwith AI logo"></div>
+        <div class="experience-description">
+          <h3 id="starwith-heading"><a href="https://starwith.ai/">Starwith AI</a></h3>
+          <p class="role">Research Intern</p>
+          <p>Advised by Yao Feng. Research on multimodal understanding and human-centered embodied intelligence.</p>
+        </div>
+      </article>
+      <article class="experience" aria-labelledby="acorn-heading">
+        <!-- Centered square CSS crop of the supplied new logo; the source file stays intact. -->
+        <div class="logo-frame"><img class="acorn-logo" src="assets/new_acron.png" width="373" height="348" loading="lazy" alt="Acorn Robot logo"></div>
+        <div class="experience-description">
+          <h3 id="acorn-heading"><a href="https://www.linkedin.com/company/acornrobot/home/">Acorn Robot</a></h3>
+          <p class="role">Research Intern</p>
+          <p>Research on tactile sensing, robotic manipulation, and adaptive feedback control.</p>
+        </div>
+      </article>
+      <!-- TODO(owner): Supply a verified ARL website URL if a link is desired. -->
+    </section>
+  </main>
+</body>
 </html>

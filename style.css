@@ -1,0 +1,119 @@
+:root {
+  color-scheme: light;
+  font-family: Arial, Helvetica, "Microsoft YaHei", sans-serif;
+  font-size: 16px;
+  color: #222;
+  background: #fff;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  line-height: 1.6;
+  -webkit-text-size-adjust: 100%;
+}
+
+.page {
+  width: min(100%, 980px);
+  margin: 0 auto;
+  padding: 52px 32px 64px;
+}
+
+a {
+  color: #1764a2;
+  text-decoration: none;
+  text-underline-offset: 3px;
+}
+
+a:hover, a:focus-visible { text-decoration: underline; }
+a:focus-visible { outline: 2px solid #1764a2; outline-offset: 3px; }
+
+h1, h2, h3, p { margin: 0; }
+h1, h2, h3 { line-height: 1.3; }
+h1 { font-size: 2rem; font-weight: 500; margin-bottom: 20px; }
+h2 { font-size: 1.5rem; font-weight: 500; margin-bottom: 20px; }
+h3 { font-size: 1rem; font-weight: 700; }
+strong { font-weight: 700; }
+
+.name-divider { color: #777; font-weight: 400; margin: 0 5px; }
+.chinese-name { font-size: .9em; font-weight: 400; white-space: nowrap; }
+
+.introduction {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 232px;
+  grid-template-rows: auto 1fr;
+  align-items: start;
+  column-gap: 42px;
+}
+
+.introduction h1 { grid-column: 1; grid-row: 1; }
+.biography { min-width: 0; grid-column: 1; grid-row: 2; }
+.biography p + p { margin-top: 13px; }
+.portrait {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 4px;
+}
+.contact-links { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: 18px; }
+.contact-links span, .publication-links span { color: #777; }
+
+.section { margin-top: 38px; }
+.news-list { list-style: none; margin: 0; padding: 0; }
+.news-list li { display: grid; grid-template-columns: 93px minmax(0, 1fr); gap: 14px; }
+.news-list li + li { margin-top: 9px; }
+.news-list time { color: #555; font-variant-numeric: tabular-nums; }
+
+.publications { border-top: 1px solid #ddd; padding-top: 28px; }
+.publication { scroll-margin-top: 24px; }
+.publication.with-figure { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 26px; align-items: center; }
+.publication-figure { display: block; }
+.publication-figure img { display: block; width: 100%; height: auto; object-fit: contain; }
+.publication-details { min-width: 0; }
+.publication + .publication { margin-top: 28px; }
+.publication h3 { margin-bottom: 5px; }
+.authors, .venue, .publication-links { margin-top: 3px; }
+.publication-links span { margin: 0 5px; }
+.summary { margin-top: 8px; color: #3b3b3b; }
+
+.experience { display: grid; grid-template-columns: 144px minmax(0, 1fr); gap: 26px; align-items: center; }
+.experience + .experience { margin-top: 28px; }
+.logo-frame { width: 144px; height: 104px; display: flex; justify-content: center; align-items: center; }
+.logo-frame img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.logo-frame .acorn-logo { width: 94px; height: 94px; object-fit: cover; object-position: center; }
+.experience-description { min-width: 0; }
+.experience-description p { margin-top: 3px; }
+.role { font-style: italic; }
+
+@media (max-width: 720px) {
+  .page { padding: 32px 24px 48px; }
+  .introduction { grid-template-columns: minmax(0, 1fr) 180px; column-gap: 24px; }
+  h1 { font-size: 1.75rem; }
+}
+
+@media (max-width: 600px) {
+  .page { padding: 26px 20px 40px; }
+  .introduction { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto; row-gap: 20px; }
+  .introduction h1 { margin-bottom: 0; }
+  .biography { grid-row: 3; }
+  .portrait { grid-column: 1; grid-row: 2; width: 172px; margin: 0 auto; }
+  h1 { font-size: 1.8rem; margin-bottom: 18px; }
+  h2 { font-size: 1.4rem; margin-bottom: 16px; }
+  .section { margin-top: 32px; }
+  .news-list li { grid-template-columns: 80px minmax(0, 1fr); gap: 12px; }
+  .news-list li + li { margin-top: 12px; }
+  .publication.with-figure { grid-template-columns: minmax(0, 1fr); gap: 14px; }
+  .publication-figure { width: min(100%, 320px); }
+  .experience { grid-template-columns: 88px minmax(0, 1fr); gap: 18px; align-items: start; }
+  .logo-frame { width: 88px; height: 76px; }
+  .logo-frame .acorn-logo { width: 70px; height: 70px; }
+}
+
+@media print {
+  .page { width: 100%; padding: 0; }
+  a { color: inherit; }
+  .publication, .experience { break-inside: avoid; }
+}
